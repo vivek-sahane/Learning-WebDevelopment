@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .cards{
+            border-radius: 20px;
+            width: 500px;
+            height: 700px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cards img{
+           width: 100%;
+        }
+
+        #hey{
+            padding-left: 130px;
+        }
+        .lorem{
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 30px
+        }
+
+        .pllan{
+            padding-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .plan{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-self: center;
+            width: 400px;
+            height: 60px;
+            background-color: #b9cdda;
+            border-radius: 20px;
+            
+        }
+
+        .plan p{
+            padding-top: 10px;
+            font-size: 15px;
+            font-weight: bold;
+        } 
+
+        .plan a{
+            padding-top: 10px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .proc{
+            padding-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #Proceed{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 60px;
+            background-color: #332965;
+            border-radius: 20px;
+            color: white;
+            box-shadow: 5px 10px 10px rgb(110, 101, 101);
+        }
+
+        .cancle{
+            padding-top: 30px;
+            padding-left: 200px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+             <img width="300px" height="350px" src="shreeram.jpg">
+
+             <h2 id="hey"> Om Namah Shivay </h2>
+
+             <div class="lorem">
+                <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis ea, quibusdam quasi vero dolorum dolore.</p>
+             </div>
+             
+            <div class="pllan">
+                <div class="plan">
+                    <p>Anuual Plan <br>$99.9/year</p>
+                    <a href="#" >Change</a>
+                 </div>
+            </div>
+             
+             <div class="proc">
+                <p id="Proceed">Proceed to payment</p>
+             </div>
+             <div class="cancle">
+                Cancle Order
+             </div>
+        </div>
+    </div>
+</body>
+</html>

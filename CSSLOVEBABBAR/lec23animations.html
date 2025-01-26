@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100px;
+            height: 100px;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: beige;
+            border: 3px solid black;
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+            animation: rightmoment;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            /*animation-timing-function: ease-in-out;  /*it manages the time of sliding slow or fast*/
+            animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation-direction: alternate;  /*defines where animation direction */
+            /*animation-fill-mode: forwards; stops animation at that index */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+        }
+
+        @keyframes rightmoment {
+            from {
+                top: 0;
+                left: 0;
+            }
+            to {
+                top: 0;
+                left: 1200px;
+            }
+        }
+
+        @keyframes circle {
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+            60%{
+                top: 90%;
+                left: 10%;
+            }
+            100%{
+                top: 95%;
+                left: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

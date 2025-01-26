@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            height: 800px;
+            margin: 2px;
+            padding: 2px;
+            display: flex;  /*by default it is row we have to change direction colomn*/
+            flex-direction: row;
+            /*flex-wrap: wrap;  /* It does not change the actual size of content after decreasing screen size also and content comes under another */
+            justify-content: start; /* horizontal axis:  Place horizontally at center */
+            align-items: start; /* vertical axis: */
+            align-content: start;  /*it reduce the difference btw above box and below box after minimizing size*/
+
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: aqua;    
+            order: 500;
+            flex-shrink: 4;   /*It shrinks perticular box faster in comparison to other*/
+            
+        }
+        #box2{
+            background-color: blue;   
+            flex-grow: 1;
+        }
+        #box3{
+            background-color: orange;   
+            flex-basis: 400px; /* it assigns flex border */ 
+        }
+        #box4{
+            background-color: brown;    
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

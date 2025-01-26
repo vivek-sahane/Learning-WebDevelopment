@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
+        .box{
+            /*custom variable
+            i can define it also in :root class so that it become globall*/
+
+            --primary-color: brown;
+            --custom-width: 330px;
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /*box-shadow: 10px 15px brown;
+            box-shadow: 10px 15px 10px brown;
+            box-shadow: 10px 15px 20px 20px brown;
+            box-shadow: 10px 15px red, 15px 8px green;*/
+            text-shadow: 10px 10px 4px white;
+            /* by default shadow ka color black hota hein */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Jay Shreee Ram</h2>
+            <h2>Welcome to codehelp</h2>
+            <p>Lorem ipsum iquid voluptatem facilis, illum voluptatum eius corporis obcaecati repellendus, quam totam omnis. At molestiae minus dignissimos inventore. Iusto veniam exercitationem reiciendis ab eos aut dicta excepturi culpa <q></q>um cum sunt quia necessitatibus quas? Accusamus incidunt dolorum magni sequi natus. Voluptate quisquam harum, facere id sunt illum voluptatibus! Obcaecati voluptatem asperiores omnis repellendus cum consectetur praesentium dolore!</p>
+        </div>
+    </div>
+</body>
+</html>

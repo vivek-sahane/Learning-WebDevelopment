@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 100%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    background-color: rgb(228, 238, 238);
+}
+
+.header_container{
+    margin-bottom: 2.8rem;
+}
+
+.header_desc{
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+
+@media (max-width:650px) {
+    .main_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+
+
+.card_caontainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(100, 73, 73);
+    border-radius: 2px;
+
+}
+
+.card_image_container{
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+
+.card_image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card_title_container{
+display: flex;
+flex-direction: column;
+
+}
+
+.card_caontainer:hover .card_image{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: rgb(63, 51, 51);
+}
+
+.card_title_hover :hover {
+    color: rgb(68, 68, 144);
+}
+
+.card_des{
+    color: black;
+    font-size: 1rem;
+}
+
+.card_footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.author_con{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author_avtar_con{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(87, 73, 73);
+    border-radius: 50px;
+    background-color: rgb(171, 165, 165);
+}
+
+.author_info_con{
+    display: flex;
+    flex-direction: column;
+}
+
+.card_tag_con{
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+
+}
