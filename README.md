@@ -10,4 +10,6 @@ QR Generator <br>![image](https://github.com/user-attachments/assets/9eb74331-2d
 Weather App ![Screenshot 2025-02-19 091006](https://github.com/user-attachments/assets/4b867aab-d3d6-4929-9c64-9c8028d0ca08)
 Toast-Notification ![image](https://github.com/user-attachments/assets/35c25481-2075-45c8-bf60-f4dd686b84fa)
 
+Music Player <br> ![image](https://github.com/user-attachments/assets/75a1a398-7a73-4c3c-94b6-85b911a28f42)
+
 
